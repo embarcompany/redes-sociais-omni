@@ -246,8 +246,8 @@ services:
       - TEMPORAL_CORS_ORIGINS=http://127.0.0.1:3000
     networks:
       - temporal-network
-    ports:
-      - '8080:8080'
+    expose:
+      - 8080
 
 volumes:
   postgres-volume:
